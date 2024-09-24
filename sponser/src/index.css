@@ -1,0 +1,192 @@
+:root {
+    --line-height: 1.5;
+}
+
+
+html {
+    font-family: var(--ion-font-family);
+    line-height: var(--line-height);
+    font-weight: 400;
+    color: var(--ion-text-color);
+    background-color: var(--ion-background-color);
+}
+
+@supports (-webkit-touch-callout: none) {
+    html {
+        font: var(--ion-dynamic-font, 16px var(--ion-font-family))
+    }
+}
+
+a {
+    background-color: transparent;
+    color: var(--ion-color-primary, #0054e9)
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.5 !important;
+    direction: rtl;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0s !important;
+}
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+legend,
+ol,
+p,
+pre,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block
+}
+
+address {
+    font-style: normal
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--sponser-text);
+    font-weight: inherit;
+}
+
+h1 {
+    font-size: 2.25rem !important;
+}
+
+h2 {
+    font-size: 1.75rem !important;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+}
+
+h4 {
+    font-size: 1.25rem !important;
+}
+
+h5 {
+    font-size: 1.125rem !important;
+}
+
+h6 {
+    font-size: 1rem !important;
+}
+
+small {
+    font-size: 75%
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+/* app styles */
+
+.sponser-logo {
+    fill: var(--ion-color-primary);
+    min-width: 130px;
+    max-width: 200px;
+    width: 50%;
+
+}
+
+ion-toolbar {
+    --opacity: 0.5;
+}
+ion-tab-bar {
+    border-top: solid 1px #222;
+}
+
+/* article-page */
+
+#article-page {
+    h1 {
+        font-size: 1.75rem !important;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1rem !important;
+        font-weight: 400;
+    }
+
+    figure {
+        margin-bottom: 1rem;
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            border-style: none;
+            object-fit: cover;
+        }
+
+        figcaption {
+            font-size: .875rem;
+            font-weight: 400;
+            line-height: 1;
+            color: var(--sponser-text);
+            margin-top: .375rem;
+
+        }
+    }
+
+    .article-body{
+        p {
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: var(--sponser-text);
+            margin-bottom: 1rem;
+            &:has(strong) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
